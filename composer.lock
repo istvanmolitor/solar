@@ -1063,7 +1063,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/blade-ui",
-                "reference": "af29b94efc0a51e1f8589e9a9b419c3ca70485c9"
+                "reference": "13a05b71c407e9d4f9d4264c25610d69efe6f38d"
             },
             "require": {
                 "istvanmolitor/menu": "dev-main",
