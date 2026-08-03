@@ -8,8 +8,20 @@
         "framework"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/blade-ui"
+        },
+        {
+            "type": "path",
+            "url": "packages/menu"
+        }
+    ],
     "require": {
         "php": "^8.3",
+        "istvanmolitor/blade-ui": "dev-main",
+        "istvanmolitor/menu": "dev-main",
         "laravel/framework": "^13.8",
         "laravel/tinker": "^3.0"
     },

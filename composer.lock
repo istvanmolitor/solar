@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64bd0b4982680db1bcf929cc8ff1ce50",
+    "content-hash": "0502de4332b41e0a77d2797f68dba1af",
     "packages": [
         {
             "name": "brick/math",
@@ -1056,6 +1056,95 @@
                 }
             ],
             "time": "2026-07-17T13:53:03+00:00"
+        },
+        {
+            "name": "istvanmolitor/blade-ui",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/blade-ui",
+                "reference": "af29b94efc0a51e1f8589e9a9b419c3ca70485c9"
+            },
+            "require": {
+                "istvanmolitor/menu": "dev-main",
+                "php": "^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\BladeUi\\Providers\\BladeUiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\BladeUi\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Blade UI components package",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/menu",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/menu",
+                "reference": "7c78755dc9819c609185b73dc6b9433812731031"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Menu\\Providers\\MenuServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Menu\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Molitor\\Menu\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Menu",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
@@ -9892,7 +9981,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "istvanmolitor/blade-ui": 20,
+        "istvanmolitor/menu": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
