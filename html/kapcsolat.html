@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kapcsolat — SolarisPro | Ingyenes napelem ajánlatkérés</title>
+<meta name="description" content="Kérjen ingyenes, kötelezettségek nélküli ajánlatot napelemes rendszerére. 48 órán belül válaszolunk." />
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: "#3b4fdb", soft: "#e7eafc", foreground: "#ffffff" },
+          secondary: "#eef0f8",
+          muted: { DEFAULT: "#f4f5fb", foreground: "#6b7280" },
+          border: "#e2e6f0",
+          accent: "#4a9fd8",
+          sun: "#f0b429",
+        },
+        fontFamily: {
+          display: ["Sora", "ui-sans-serif", "system-ui", "sans-serif"],
+          sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="flex min-h-screen flex-col bg-white text-slate-900">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 border-b border-border/60 bg-white/80 backdrop-blur-lg">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <a href="index.html" class="flex items-center gap-2 font-display text-lg font-bold text-slate-900">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-hero text-white shadow-soft">
+        <i data-lucide="sun" class="h-5 w-5"></i>
+      </span>
+      <span>SolarisPro</span>
+    </a>
+
+    <nav class="hidden items-center gap-1 md:flex">
+      <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Kezdőlap</a>
+      <a href="szolgaltatasok.html" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Szolgáltatások</a>
+      <a href="palyazatok.html" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Pályázatok</a>
+      <a href="rolunk.html" class="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Rólunk</a>
+      <a href="kapcsolat.html" class="rounded-lg px-3 py-2 text-sm font-medium bg-primary-soft text-primary">Kapcsolat</a>
+    </nav>
+
+    <a href="kapcsolat.html" class="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 md:inline-flex">
+      Ajánlatkérés
+    </a>
+
+    <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-lg border border-border text-slate-900 md:hidden">
+      <i data-lucide="menu" class="h-5 w-5"></i>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="hidden border-t border-border bg-white md:hidden">
+    <nav class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3">
+      <a href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Kezdőlap</a>
+      <a href="szolgaltatasok.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Szolgáltatások</a>
+      <a href="palyazatok.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Pályázatok</a>
+      <a href="rolunk.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-primary-soft hover:text-primary">Rólunk</a>
+      <a href="kapcsolat.html" class="rounded-lg px-3 py-2.5 text-sm font-medium bg-primary-soft text-primary">Kapcsolat</a>
+      <a href="kapcsolat.html" class="mt-2 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-white">Ajánlatkérés</a>
+    </nav>
+  </div>
+</header>
+
+<main class="flex-1">
+
+  <section class="bg-gradient-soft">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <p class="text-sm font-semibold uppercase tracking-wider text-primary">Kapcsolat</p>
+      <h1 class="mt-2 max-w-3xl font-display text-4xl font-bold leading-tight sm:text-5xl">
+        Kérjen ingyenes ajánlatot
+      </h1>
+      <p class="mt-4 max-w-2xl text-lg text-muted-foreground">
+        Töltse ki az űrlapot, vagy hívjon minket közvetlenül. 48 órán belül személyre szabott ajánlattal jelentkezünk.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
+      <!-- Info -->
+      <div class="space-y-4">
+        <a href="tel:+36301234567" class="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 transition-colors hover:border-primary">
+          <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary">
+            <i data-lucide="phone" class="h-5 w-5"></i>
+          </div>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Telefon</p>
+            <p class="mt-0.5 truncate font-medium text-slate-900">+36 30 123 4567</p>
+          </div>
+        </a>
+        <a href="mailto:info@solarispro.hu" class="flex items-start gap-4 rounded-2xl border border-border bg-white p-5 transition-colors hover:border-primary">
+          <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary">
+            <i data-lucide="mail" class="h-5 w-5"></i>
+          </div>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">E-mail</p>
+            <p class="mt-0.5 truncate font-medium text-slate-900">info@solarispro.hu</p>
+          </div>
+        </a>
+        <div class="flex items-start gap-4 rounded-2xl border border-border bg-white p-5">
+          <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary">
+            <i data-lucide="map-pin" class="h-5 w-5"></i>
+          </div>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Iroda</p>
+            <p class="mt-0.5 truncate font-medium text-slate-900">1051 Budapest, Napfény u. 12.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 rounded-2xl border border-border bg-white p-5">
+          <div class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-primary-soft text-primary">
+            <i data-lucide="clock" class="h-5 w-5"></i>
+          </div>
+          <div class="min-w-0">
+            <p class="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Nyitvatartás</p>
+            <p class="mt-0.5 truncate font-medium text-slate-900">H–P: 8:00–17:00, Szo: 9:00–13:00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <form id="contactForm" class="rounded-3xl border border-border bg-white p-6 shadow-soft sm:p-8">
+        <div id="formFields">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="name" class="text-sm font-medium">Név<span class="text-primary"> *</span></label>
+              <input id="name" name="name" type="text" required class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30" />
+            </div>
+            <div>
+              <label for="phone" class="text-sm font-medium">Telefonszám<span class="text-primary"> *</span></label>
+              <input id="phone" name="phone" type="tel" required class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="text-sm font-medium">E-mail<span class="text-primary"> *</span></label>
+              <input id="email" name="email" type="email" required class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30" />
+            </div>
+            <div>
+              <label for="zip" class="text-sm font-medium">Irányítószám</label>
+              <input id="zip" name="zip" type="text" class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Rendszer típusa</label>
+              <select class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30">
+                <option>Lakossági</option>
+                <option>Vállalati</option>
+                <option>Energiatárolás</option>
+                <option>Nem tudom</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="message" class="text-sm font-medium">Üzenet</label>
+            <textarea id="message" rows="5" class="mt-1.5 w-full rounded-xl border border-input bg-white px-4 py-2.5 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/30" placeholder="Írja le röviden, miben segíthetünk..."></textarea>
+          </div>
+          <button type="submit" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition-transform hover:scale-[1.02] sm:w-auto">
+            Ajánlatkérés elküldése <i data-lucide="send" class="h-4 w-4"></i>
+          </button>
+          <p class="mt-3 text-xs text-muted-foreground">
+            Az űrlap elküldésével elfogadja adatkezelési tájékoztatónkat.
+          </p>
+        </div>
+        <div id="formSent" class="hidden py-16 text-center">
+          <div class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-primary-soft text-primary">
+            <i data-lucide="send" class="h-6 w-6"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Köszönjük megkeresését!</h3>
+          <p class="mt-2 text-sm text-muted-foreground">48 órán belül felvesszük Önnel a kapcsolatot.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-24 border-t border-border bg-secondary/40">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
+    <div>
+      <div class="flex items-center gap-2 font-display text-lg font-bold">
+        <span class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-hero text-white">
+          <i data-lucide="sun" class="h-5 w-5"></i>
+        </span>
+        SolarisPro
+      </div>
+      <p class="mt-3 text-sm text-muted-foreground">
+        Napelemes rendszerek teljes körű kivitelezése, telepítése és pályázati ügyintézése egy kézből.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold text-slate-900">Oldalak</h4>
+      <ul class="mt-3 space-y-2 text-sm text-muted-foreground">
+        <li><a href="szolgaltatasok.html" class="hover:text-primary">Szolgáltatások</a></li>
+        <li><a href="palyazatok.html" class="hover:text-primary">Pályázatok</a></li>
+        <li><a href="rolunk.html" class="hover:text-primary">Rólunk</a></li>
+        <li><a href="kapcsolat.html" class="hover:text-primary">Kapcsolat</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold text-slate-900">Kapcsolat</h4>
+      <ul class="mt-3 space-y-2 text-sm text-muted-foreground">
+        <li class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4 text-primary"></i> +36 30 123 4567</li>
+        <li class="flex items-center gap-2"><i data-lucide="mail" class="h-4 w-4 text-primary"></i> info@solarispro.hu</li>
+        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="h-4 w-4 text-primary"></i> 1051 Budapest, Napfény u. 12.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold text-slate-900">Nyitvatartás</h4>
+      <ul class="mt-3 space-y-2 text-sm text-muted-foreground">
+        <li>Hétfő–Péntek: 8:00 – 17:00</li>
+        <li>Szombat: 9:00 – 13:00</li>
+        <li>Vasárnap: zárva</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-border">
+    <div class="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-muted-foreground sm:px-6 lg:px-8">
+      <span id="year"></span> SolarisPro Kft. Minden jog fenntartva.
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  document.getElementById("year").textContent = "© " + new Date().getFullYear();
+  document.getElementById("menuBtn").addEventListener("click", () => {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.getElementById("formFields").classList.add("hidden");
+    document.getElementById("formSent").classList.remove("hidden");
+  });
+</script>
+</body>
+</html>
